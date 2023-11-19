@@ -4,4 +4,7 @@ import org.springframework.http.ResponseEntity;
 
 public interface LoginController {
     public ResponseEntity<String> sayHello();
+
+    public ResponseEntity<String> sayHelloGuest();
+
 }

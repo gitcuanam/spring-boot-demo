@@ -1,0 +1,27 @@
+server:
+  port: 8091
+
+#spring:
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          jwk-set-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/protocol/openid-connect/certs
+#
+#keycloak-client:
+#  server-url: http://192.168.56.3:8080/auth
+#  realm:  test
+
+security:
+  authentication:
+    jwt:
+      key-store: key_test.jks
+      key-store-password: 5tgbNHY^7ujm
+      key-alias: viz
+      access-token-expires-in: 1h
+      refresh-token-expires-in: 30d
+
+app:
+  client:
+    client-id: 54e99ad8-1542-4b59-ab6f-7e4e0614cc64
+    client-secret: zw2joNOrsy5ssZhkuJaHbyDRjHLtym6OSNj64H5Z2nYt1Re03NttbUOC3UgKGCIEn3JsbaBUUWIsSoBmJNT1j1YIiKU4h4JdLJgo
